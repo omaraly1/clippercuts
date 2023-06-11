@@ -1,0 +1,290 @@
+@font-face {
+  font-family: "Marcellus";
+  src: url("./fonts/Marcellus/Marcellus-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.navbar {
+  background-color: #000000;
+  height: 80px;
+  font-family: "Marcellus", sans-serif;
+  z-index: 9;
+}
+
+#mainSlides {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #ffffff;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus {
+  color: #555555;
+}
+
+.carousel-overlay .carousel-item:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.carousel-item img {
+  object-fit: cover;
+}
+
+.carousel-caption1 {
+  height: 90%;
+}
+#ff {
+  top: 40%;
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+#fa.carousel-caption {
+  top: 40%;
+  left: 50%;
+  color: #fff;
+}
+
+.main-content {
+  height: calc(100% - 80px);
+  top: 80px;
+  overflow-y: scroll;
+}
+
+.carousel,
+.carousel-inner,
+.carousel-item {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.main-title {
+  font-family: "Marcellus", sans-serif;
+  font-size: 75px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.box {
+  padding: 0 50px 0 50px;
+}
+
+.name {
+  padding-top: 30px;
+  font-family: "Marcellus", sans-serif;
+  color: gold;
+}
+
+.bio {
+  font-family: "Marcellus", sans-serif;
+  color: white;
+}
+.services-text {
+  font-family: "Marcellus", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.page-title {
+  font-family: "Marcellus", sans-serif;
+  font-size: 40px;
+  color: #fff;
+}
+#services {
+  background-color: #000000;
+}
+
+.services-name {
+  color: gold;
+  font-size: 30px;
+}
+
+.services-text {
+  padding-left: 20px;
+}
+
+.text {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  color: #ffffff;
+  font-size: 24px;
+  font-family: "Marcellus", sans-serif;
+  z-index: 10;
+}
+.down-arrow {
+  position: absolute;
+  top: calc(100vh - 80px);
+  left: calc(50% - 14px);
+  width: 0;
+  height: 30px;
+  border: 2px solid;
+  color: #ffffff;
+  border-radius: 2px;
+  animation: jumpInfinite 1.5s infinite;
+}
+
+.down-arrow:after {
+  content: " ";
+  position: absolute;
+  top: 12px;
+  left: -8px;
+  width: 16px;
+  height: 16px;
+  border-bottom: 4px solid;
+  border-right: 4px solid;
+  border-radius: 4px;
+  transform: rotateZ(45deg);
+}
+
+@keyframes jumpInfinite {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 20px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fade-in 1s ease-in-out;
+}
+
+.custom-mt-8 {
+  margin-top: 8rem !important;
+}
+
+#experts {
+  background-color: #000000;
+}
+
+#pricing,
+#experts,
+#location {
+  background-color: #000000;
+}
+
+.card {
+  background-color: black !important;
+  border: 1px solid white !important;
+  font-family: "Marcellus", sans-serif;
+  color: white;
+  height: 350px;
+}
+
+#footer {
+  background-color: gold;
+}
+
+.location-text {
+  font-family: "Marcellus", sans-serif;
+  font-size: 25px;
+  color: white;
+}
+.btn-warning {
+  color: #ffd700;
+}
+
+.modal-dialog {
+  max-width: 1200px !important;
+}
+
+.modal-content {
+  color: white;
+  background-color: black !important;
+}
+
+.modal-content,
+.modal-header,
+.modal-footer {
+  background-color: black;
+  border: none !important;
+}
+
+.btn-close {
+  color: #fff !important;
+  font-size: 20px !important;
+  opacity: 1;
+}
+
+.modal-body {
+  font-size: 20px;
+}
+
+.form-control,
+.form-select {
+  background-color: black !important;
+  color: white !important;
+}
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+.form-label {
+  text-align: right !important;
+}
+
+.modal-content {
+  box-shadow: 0 0 10px rgb(117, 102, 102);
+}
+input[type="date"]:invalid::-webkit-datetime-edit,
+input[type="date"]:invalid::-webkit-datetime-edit {
+  color: grey;
+}
+
+input[type="time"]:invalid::-webkit-datetime-edit,
+input[type="time"]:invalid::-webkit-datetime-edit {
+  color: grey;
+}
+
+option:not(:first-of-type) {
+  color: grey !important;
+}
+
+select:invalid {
+  color: red;
+}
+
+#footer {
+  font-family: "Marcellus", sans-serif;
+  text-align: center;
+}
+
+input[type="feedback"] {
+  height: 300px !important;
+  color: grey;
+}

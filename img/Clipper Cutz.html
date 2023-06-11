@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://127.0.0.1:5500/#services -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./Clipper Cutz_files/style.css" rel="stylesheet">
+    <link rel="icon" href="./Clipper Cutz_files/logo.png">
+    <!-- Bootstrap CSS -->
+    <link href="./Clipper Cutz_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="./Clipper Cutz_files/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Clipper Cutz</title>
+  </head>
+
+  <body data-new-gr-c-s-check-loaded="14.1112.0" data-gr-ext-installed=""><nav class="navbar navbar-expand-lg navbar-overlay bg-black sticky-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:5500/#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:5500/#experts">Experts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:5500/#home">
+              <img src="./Clipper Cutz_files/logo.png" alt="logo" width="30" height="24">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:5500/#pricing">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:5500/#location">Location</a>
+          </li>
+        </ul>
+        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#bookingModal">
+        Book Your Transformation
+      </button>
+      </div>
+    </div>
+  </nav>
+
+  
+    <section id="home" class="main-content">
+      <div class="carousel-container">
+        <div id="mainSlides" class="carousel slide carousel-overlay" data-bs-ride="carousel">
+          <div class="carousel-inner" style="height: 100vh">
+            <div class="carousel-item active" style="height: 100vh">
+              <img src="./Clipper Cutz_files/bald-fade-haircuts-men-2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" style="height: 100vh">
+              <img src="./Clipper Cutz_files/HairCutFade.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-caption carousel-caption1">
+        <div id="ff" class="main-title fade-in">
+          Clipper Cutz
+          <p style="font-size: 20px">A Unique Hair Salon Experience.</p>
+          <button class="btn btn-warning" href="#services">
+            Learn More
+          </button>
+
+          <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog model-lg modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Book Your Appointment
+                  </h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Name</label>
+                      <input type="text" class="form-control custom-input" id="name" placeholder="Enter your name" required="">
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email</label>
+                      <input type="email" class="form-control custom-input" id="email" placeholder="Enter your email" required="">
+                    </div>
+                    <div class="mb-3">
+                      <label for="date" class="form-label">Date</label>
+                      <input type="date" class="form-control custom-input" id="date" required="">
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 mb-3">
+                        <label for="haircut" class="form-label">Type of Haircut</label>
+                        <select class="form-select custom-input" id="haircut" required="">
+                          <option value="" disabled="" selected="">Select a haircut type</option>
+                          <option value="1">Trim</option>
+                          <option value="2">Buzz Cut</option>
+                          <option value="3">Fade</option>
+                          <!-- Add more options as needed -->
+                        </select>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="barber" class="form-label">Barber</label>
+                        <select class="form-select custom-input" id="barber" required="">
+                          <option value="" disabled="" selected="">Select a barber</option>
+                          <option value="1">John Doe</option>
+                          <option value="2">Jane Smith</option>
+                          <option value="3">Mike Johnson</option>
+                          <!-- Add more options as needed -->
+                        </select>
+                      </div>
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn-warning" style="width: 100px">
+                      Book
+                    </button>
+                  </form>
+                </div>
+                
+                <div class="modal-footer">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="http://127.0.0.1:5500/#services">
+        <div class="down-arrow"></div>
+      </a>
+    </section>
+
+    <section id="services" class="main-content">
+      <div style="padding-top: 100px"></div>
+      <div class="page-title text-center" style="padding-bottom: 100px">
+        Our Services
+      </div>
+      <div class="row">
+        <div class="col-lg-6 center-block text-center my-auto" style="padding-left: 50px">
+          <div class="services-text">
+            <img src="./Clipper Cutz_files/clipper.png" class="img-fluid" style="width: 50px" alt="Image 1">
+            <span class="services-name">Transformative Haircuts</span>
+            <p style="padding-bottom: 40px">
+              Whether you're looking for a simple trim, or a complex taper fade
+              with a design, Clipper Cutz has got you covered.
+            </p>
+            <img src="./Clipper Cutz_files/beardlogo.png" class="img-fluid" style="width: 50px" alt="Image 1">
+            <span class="services-name">Beard Transformation</span>
+            <p style="padding-bottom: 40px">
+              Give your beard the treatment it deserves. Clipper Cutz knows
+              exactly how to manage your beard, just sit back and let us do the
+              work.
+            </p>
+            <img src="./Clipper Cutz_files/image.png" class="img-fluid" style="width: 50px" alt="Image 1">
+            <span class="services-name">Scissor Cut</span>
+            <p style="padding-bottom: 40px">
+              No hair is a challenge for our barbers. We will layer your hair
+              exactly how it should be to get you back in style.
+            </p>
+            <img src="./Clipper Cutz_files/image.png" class="img-fluid" style="width: 50px" alt="Image 1">
+            <span class="services-name">Scissor Cut</span>
+            <p style="padding-bottom: 40px">
+              No hair is a challenge for our barbers. We will layer your hair
+              exactly how it should be to get you back in style.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6 center-block align-middle" style="padding-right: 80px">
+          <div style="padding-top: 90px"></div>
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./Clipper Cutz_files/bald-fade-haircuts-men-2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>
+                    Some representative placeholder content for the first slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./Clipper Cutz_files/BarberBros_HotTowelShave.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>
+                    Some representative placeholder content for the second
+                    slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./Clipper Cutz_files/saved_resource" class="d-block w-100" alt="...">
+                <div class="d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>
+                    Some representative placeholder content for the third slide.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div style="padding-top: 0px"></div>
+    </section>
+
+    <section id="experts">
+      <div style="padding-top: 80px"></div>
+      <div class="page-title text-center" style="padding-bottom: 100px">
+        The Experts
+      </div>
+
+      <div class="row text-center">
+        <div class="col-sm-4">
+          <img src="./Clipper Cutz_files/istockphoto-1056465284-612x612-modified.png" alt="Portrait 1">
+          <div class="name">
+            <h4>DeMarcus James</h4>
+          </div>
+          <div class="bio">
+            <p>
+              Demarcus James is a highly skilled and passionate barber known for
+              his exceptional craftsmanship. With years of experience and a
+              commitment to excellence, he has earned a reputation as one of the
+              finest barbers in his community.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <img src="./Clipper Cutz_files/istockphoto-1056465284-612x612-modified.png" alt="Portrait 2">
+          <div class="name">
+            <h4>DeMarcus James</h4>
+          </div>
+          <div class="bio">
+            <p>
+              Demarcus James is a highly skilled and passionate barber known for
+              his exceptional craftsmanship. With years of experience and a
+              commitment to excellence, he has earned a reputation as one of the
+              finest barbers in his community.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <img src="./Clipper Cutz_files/istockphoto-1056465284-612x612-modified.png" alt="Portrait 3">
+          <div class="name">
+            <h4>DeMarcus James</h4>
+          </div>
+          <div class="bio">
+            <p>
+              Demarcus James is a highly skilled and passionate barber known for
+              his exceptional craftsmanship. With years of experience and a
+              commitment to excellence, he has earned a reputation as one of the
+              finest barbers in his community.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div style="padding-bottom: 200px"></div>
+    </section>
+
+    <section id="pricing">
+      <div style="padding-top: 80px"></div>
+      <div class="page-title text-center" style="padding-bottom: 100px">
+        Pricing
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <div class="card-header">
+                <h3 class="name text-center">Standard</h3>
+              </div>
+              <div class="card-body">
+                <h2 class="text-center">$25</h2>
+                <p class="text-center">Includes:</p>
+                <ul class="list-unstyled text-center">
+                  <li>Classic Haircut</li>
+                  <li>Beard Trim</li>
+                  <li>Shampoo</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <div class="card-header">
+                <h3 class="name text-center">Deluxe</h3>
+              </div>
+              <div class="card-body">
+                <h2 class="text-center">$35</h2>
+                <p class="text-center">Includes:</p>
+                <ul class="list-unstyled text-center">
+                  <li>Precision Haircut</li>
+                  <li>Straight Razor Shave</li>
+                  <li>Facial Massage</li>
+                  <li>Hot Towel Treatment</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <div class="card-header">
+                <h3 class="name text-center">Premium</h3>
+              </div>
+              <div class="card-body">
+                <h2 class="text-center">$45</h2>
+                <p class="text-center">Includes:</p>
+                <ul class="list-unstyled text-center">
+                  <li>Custom Haircut</li>
+                  <li>Beard Sculpting</li>
+                  <li>Hot Towel Shave</li>
+                  <li>Scalp Massage</li>
+                  <li>Aromatherapy</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <div class="card-header">
+                <h3 class="name text-center">Kids Cut</h3>
+              </div>
+              <div class="card-body">
+                <h2 class="text-center">$15</h2>
+                <p class="text-center">Includes:</p>
+                <ul class="list-unstyled text-center">
+                  <li>Children's Haircut</li>
+                  <li>Styling</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <div class="card-header">
+                <h3 class="name text-center">Beard Trim</h3>
+              </div>
+              <div class="card-body">
+                <h2 class="text-center">$15</h2>
+                <p class="text-center">Includes:</p>
+                <ul class="list-unstyled text-center">
+                  <li>Beard Trim</li>
+                  <li>Shaping</li>
+                  <li>Moisturizing</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <div class="card-header">
+                <h3 class="name text-center text-center">Clean Shave</h3>
+              </div>
+              <div class="card-body">
+                <h2 class="text-center">$20</h2>
+                <p class="text-center">Includes:</p>
+                <ul class="list-unstyled text-center">
+                  <li>Straight Razor Shave</li>
+                  <li>Hot Towel Treatment</li>
+                  <li>Facial Massage</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section id="location">
+        <div style="padding-top: 80px"></div>
+        <div class="page-title text-center" style="padding-bottom: 75px">
+          Location
+        </div>
+
+        <div class="page-title text-center" style="padding-bottom: 100px; font-size: 30px">
+          Treat yourself. Come see us.
+        </div>
+        <div class="row">
+          <div class="col-lg-6 text-center">
+            <iframe src="./Clipper Cutz_files/embed.html" width="800" height="400" style="border: 0; padding-left: 80px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="col-lg-6 text-center location-text">
+            <img src="./Clipper Cutz_files/address-icon.png" width="30px">
+            5775 Decarie Blvd, Montreal, Quebec H3W 3C8
+            <br>
+            <br>
+            <div>
+              <img src="./Clipper Cutz_files/phone-icon-white-png-6.jpg" width="30px">
+              514-253-5463
+            </div>
+            <br>
+            <br>
+            <div>Hours of Operation:</div>
+            <br>
+            <div style="font-size: 20px">
+              Monday: 9am-6pm <br>
+              Tuesday: 9am-6pm <br>
+              Wednesday: 9am-6pm <br>
+              Thursday: 9am-6pm <br>
+              Friday: 12pm-9pm <br>
+              Saturday: 12pm-9pm <br>
+              Sunday: Closed <br>
+            </div>
+          </div>
+        </div>
+        <div style="padding-bottom: 200px"></div>
+      </section>
+
+      <div style="padding-bottom: 100px"></div>
+    </section>
+    <!-- Bootstrap JS -->
+    <link href="./Clipper Cutz_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="./Clipper Cutz_files/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const mainTitle = document.querySelector(".main-title");
+        mainTitle.classList.add("fade-in");
+      });
+    </script>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body><div id="simplifyJobsContainer"><span><template shadowrootmode="open"><link rel="stylesheet" href="chrome-extension://pbanhockgagggenencehbnadejlgchfc/css/styles.css"><style>
+  :host {
+    all: initial;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    font-family: Palanquin, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(203, 213, 225, 1) transparent;
+  }
+  *::-webkit-scrollbar {
+    width: 6px;
+  }
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: rgba(203, 213, 225, 1);
+    border-radius: 3px;
+    border: 0;
+  }
+</style></template></span></div><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+  div.grammarly-desktop-integration {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+  }
+
+  div.grammarly-desktop-integration:before {
+    content: attr(data-content);
+  }
+</style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
