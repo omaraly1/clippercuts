@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "A cut above the rest.",
     "Where style meets tradition.",
     "Groomed to perfection.",
-    "Unleash your inner dapper.",
+    "Unleash your inner taper.",
     "Stay fresh, stay confident.",
     "Experience the art of grooming.",
     "Sharper looks, sharper lives.",
