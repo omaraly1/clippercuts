@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./style.css" rel="stylesheet" />
-    <link rel="icon" href="./img/logo.png" />
+    <link rel="icon" href="./img/logo-gold.png" />
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
@@ -20,7 +20,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <title>Clipper Cutz</title>
+    <title>Clipper Cuts</title>
   </head>
 
   <nav class="navbar navbar-expand-lg navbar-overlay bg-black sticky-top">
@@ -751,85 +751,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const mainTitle = document.querySelector(".main-title");
-        mainTitle.classList.add("fade-in");
-      });
-
-      const slogans = [
-        "A unique barbershop experience.",
-        "A cut above the rest.",
-        "Where style meets tradition.",
-        "Groomed to perfection.",
-        "Unleash your inner dapper.",
-        "Stay fresh, stay confident.",
-        "Experience the art of grooming.",
-        "Sharper looks, sharper lives.",
-        "Your hair, our passion.",
-        "Transforming hair, transforming lives.",
-      ];
-
-      var p = document.getElementById("slogan");
-      p.innerHTML = "";
-      var n = 0;
-      const randomIndex = Math.floor(Math.random() * slogans.length);
-      var str = slogans[randomIndex];
-      var typeTimer = setInterval(function () {
-        n = n + 1;
-        p.innerHTML = str.slice(0, n);
-        if (n === str.length) {
-          clearInterval(typeTimer);
-          p.innerHTML = str;
-          n = 0;
-          setInterval(function () {
-            if (n === 0) {
-              p.innerHTML = str;
-              n = 1;
-            } else {
-              p.innerHTML = str;
-              n = 0;
-            }
-          }, 500);
-        }
-      }, 60);
-
-      $(document).ready(function () {
-        $("#booking").submit(function (event) {
-          event.preventDefault();
-
-          var name = $("#name").val();
-          var email = $("#email").val();
-          var date = $("#date").val();
-          var time = $("#time").val();
-          var haircut = $("#haircut").val();
-          var barber = $("#barber").val();
-
-          $("#bookingModal").modal("hide");
-          $(".modal-backdrop").remove();
-
-          $("#resultBody").html(`
-      <img src="./img/check.png" width="170px"/>
-      <br/>
-      <br/>
-      <p>Thank you for booking with us, ${name}. </p>
-      <p>${barber} is looking forward to seeing you at ${time} on ${date} for your ${haircut}.</p>
-      <p> A confirmation email for your appointment has been sent to ${email}. </p>
-    `);
-
-          $("#booking").each(function () {
-            this.reset();
-          });
-          $("#resultModal").modal("show");
-        });
-      });
-      document.addEventListener("DOMContentLoaded", function (event) {
-        var link = document.getElementById("feedbackModalLink");
-        link.addEventListener("click", function (e) {
-          e.preventDefault();
-          $("#feedbackModal").modal("show");
-        });
-      });
-    </script>
+    <script src="./script.js"></script>
   </body>
 </html>
